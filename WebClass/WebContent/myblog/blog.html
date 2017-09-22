@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>myblog</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" media="all">
+		<link rel="stylesheet" href="../css/style.css" media="all">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header id="header">
+				<div class="content">
+					<h1>Hello</h1>
+					<p><br/>Make Today Ridiculously Amazing<br/>
+					And Enjoy Your DAY!</p>
+					<div>
+						<form method="post" id="loginForm">
+				            <div class="box">
+					            <input type="text" id="id" required placeholder="ID"/>
+					            <br/>
+					            <input type="password" id="pwd" required placeholder="PW"/>
+				            </div>
+				            <br/>
+				            <input type="submit" value="Login" data-target="#loginpop" data-toggle="modal"/>
+				        </form>
+				    </div>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="#join">Join</a></li>
+						<li><a href="#intro">Intro</a></li>
+						<li><a href="#dream">Dream</a></li>
+						<li><a href="#onblur">Onblur</a></li>
+					</ul>
+				</nav>
+			</header>
+			<div id="main">
+				<article id="join">
+					<h2 class="major">Join</h2>
+					<form id="signup" method="post">
+						<span>Grade</span>
+						<label for="grade_1"><input type="radio" id="grade_1" name="gender" value="1" required>1</label>
+				        <label for="grade_2"><input type="radio" id="grade_2" name="gender" value="2">2</label>
+				        <label for="grade_3"><input type="radio" id="grade_3" name="gender" value='3'>3</label>
+						<label>
+							<span>Class</span>
+							<select required>
+								<option value='' selected>-- 선택 --</option>
+								<option value='1'>1</option>
+								<option value='2'>2</option>
+								<option value='3'>3</option>
+								<option value='4'>4</option>
+								<option value='5'>5</option>
+								<option value='6'>6</option>
+							</select>
+						</label>
+						<label>
+							<span>Class Number</span><input type="text" required />
+						</label>
+						<label>
+							<span>Name</span><input type="text" id="name" required/>
+						</label>
+						<label>
+							<span>&nbsp;</span><input type="submit" value="Sign Up" />
+						</label>
+					</form>
+				</article>
+				<article id="intro">
+					<h2 class="major">Intro</h2>
+					<p>Hello my name is Parkjunmo.<br/>
+					Though I'm korean, This blog is formed by English.<br/>
+					Hard...Hard work    Thank you</p>
+				</article>
+				<article id="dream">
+					<h2 class="major">Dream</h2>
+					<img src="dream.jpg" alt="Dream"/>
+					<p>My dream is to be a full-stack programmer.</p>
+				</article>
+				<article id="onblur">
+					<h2 class="major">Onblur</h2>
+					<img src="onblur.png" alt="No Answer"/>
+				</article>
+			</div>
+			<footer id="footer">
+				<p class="copyright">&copy; Untitled. Design: parkjunmo</p>
+			</footer>
+		</div>
+
+		<div class="modal" id="myModal">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">로그인</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="window.location.reload();">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div class="modal" id="myModal2">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title">회원가입</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<div id="bg"></div>
+
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/skel.min.js"></script>
+		<script src="../js/util.js"></script>
+		<script src="../js/index.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    	<script src="../js/blog.js"></script>
+	</body>
+</html>
